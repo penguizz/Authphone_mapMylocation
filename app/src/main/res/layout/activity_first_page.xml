@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="16dp"
+    android:background="#fff"
+    tools:context="com.example.desktop.myproject.First_page">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <EditText
+        android:id="@+id/editTextphone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:paddingBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="15dp"
+        android:textColor="#2a2a2a"
+        android:hint="(+66) หมายเลขโทรศัพท์"/>
+
+
+    <Button
+        android:id="@+id/buttonPhoneVerify"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/background_login"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextphone_number"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:text="ต่อไป" />
+
+    <Button
+        android:id="@+id/buttonback_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/buttonPhoneVerify"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/background_register"
+        android:textSize="20dp"
+        android:text="เข้าสู่ระบบ"
+        android:textColor="#ffffff" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <EditText
+                android:id="@+id/editTextOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:visibility="gone"
+                android:ems="10"
+                android:hint="OTP"
+                android:inputType="textPersonName"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="15dp"
+                android:paddingBottom="20dp"
+                android:textColor="#2a2a2a"/>
+
+            <Button
+                android:id="@+id/buttonOTPVerify"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/background_login"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/editTextOTP"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="15dp"
+                android:layout_marginTop="200dp"
+                android:textSize="20dp"
+                android:text="ต่อไป" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="350dp"
+                        android:visibility="gone"
+                        android:ems="10"
+                        android:hint="OTP"
+                        android:inputType="textPassword"
+                        android:gravity="center"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:padding="15dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="#2a2a2a"/>
+
+                    <Button
+                        android:id="@+id/buttonSavepassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/background_login"
+                        android:textColor="#ffffff"
+                        android:visibility="gone"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/editTextpassword"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:padding="15dp"
+                        android:layout_marginTop="200dp"
+                        android:textSize="20dp"
+                        android:text="ต่อไป" />
+
+
+                </RelativeLayout>
+            </FrameLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>
+
+

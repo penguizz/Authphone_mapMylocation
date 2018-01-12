@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="16dp"
+    android:background="#fff"
+    tools:context="com.example.desktop.myproject.Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/editTextfirst_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="15dp"
+            android:inputType="text"
+            android:textColor="#2a2a2a"
+            android:hint="ชื่อ"/>
+
+        <EditText
+            android:id="@+id/editTextlast_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="15dp"
+            android:inputType="text"
+            android:textColor="#2a2a2a"
+            android:hint="นามสกุล"/>
+
+        <EditText
+            android:id="@+id/editTextemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="15dp"
+            android:textColor="#2a2a2a"
+            android:hint="อีเมล"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_Rester"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/background_login"
+        android:layout_margin="15dp"
+        android:text="ต่อไป"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+</RelativeLayout>
